@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaberfest 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icone/Pizza-icon_30282.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Average&family=Bebas+Neue&family=Luckiest+Guy&family=Mate&family=Montserrat:wght@300&family=Poly&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>PIZZABERFEST 2023</h1>
+            <p>O maior evento de pizza de Salvador!</p>
+        </header>
+        <nav class="nav">
+            <ul id="menu">
+                <li class="btn-menu"><a href="index.html">HOME</a></li>
+                <li class="btn-menu"><a href="stands.html">STANDS</a></li>
+                <li class="btn-menu"><a href="chefs.html">CHEFS</a></li>
+            </ul>
+        </nav>
+        <section>
+            <ul id="pessoas">
+                <li><img src="images/pessoas/img-pessoas-1.png" alt=""></li>
+                <li><img src="images/pessoas/img-pessoas-2.png" alt=""></li>
+                <li><img src="images/pessoas/img-pessoas-3.png" alt=""></li>
+            </ul>
+        </section>
+        <section id="explicacao">
+            <h2>COMO FUNCIONA?</h2>
+            <p>É muito simples e rápido de participar. Basta realizar a inscrição e levar 2kg de alimentos não
+                perecíveis,
+                que serão doados a instituições e abrigos.</p>
+            <br>
+            <p>E tem mais, aqueles que se sentirem confiáveis o bastante poderão participar da competição de quem come
+                mais
+                pizza.
+                O vencedor ganhará 4 meses de pizza grátis em cada um dos patrocinadores!</p>
+        </section>
+        <hr>
+        <section class="pt2">
+            <section id="informacoes">
+                <h2>INFORMAÇÕES</h2>
+                <p>Local: UCSAL - Campus Paralela</p>
+                <p>Horário: das 19:00 às 22:00</p>
+                <p>Data: 04/12/2023</p>
+            </section>
+            <section class="botao">
+                <img src="images/steve_pizza/steve_pizza-botao.png" alt="Steve Pizza Botão Participe">
+                <button onclick="abrirModal()"><a href="#">PARTICIPE</a></button>
+            </section>
+        </section>
+        <footer>
+            <section id="fale">
+                <h3>FALE CONOSCO</h3>
+                <p>Telefone: (71) 4002-8922</p>
+                <p>Email: pizzaberfest@ucsal.eventos.br</p>
+            </section>
+            <section id="patrocinadores">
+                <h3>PATROCINADORES</h3>
+                <ul>
+                    <li><a href="https://pizzahut.com.br"><img src="images/patrocinadores/pizza-hut.png" alt="Pizza Hut"></a></li>
+                    <li><a href="https://www.dominos.com.br"><img src="images/patrocinadores/dominos.png" alt="Domino's"></a></li>
+                    <li><a href="https://ranchodocupim.com.br/salvador/"><img src="images/patrocinadores/rancho-cupim.png" alt="Rancho do Cupim"></a></li>
+                </ul>
+            </section>
+            <section id="copyright">
+                <p>Copyright © 2023. Análise e Desenvolvimento de Sistemas - Noturno - 2023.2</p>
+            </section>
+        </footer>
+    </main>
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <form class="form" action="">
+                <h2>INSCRIÇÃO</h2>
+                <div class="campo">
+                    <label for="">Nome</label>
+                    <input type="text" placeholder=" Digite seu nome" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="">Email</label>
+                    <input type="email" placeholder=" Digite seu email" name="email" id="email" autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="">Endereço</label>
+                    <input type="text" placeholder=" Digite seu endereço" name="endereco" id="endereco" autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="">CPF</label>
+                    <input type="text" placeholder=" Digite seu CPF" name="cpf" id="cpf" autocomplete="off" required>
+                </div>
+                <div class="campo">
+                    <label for="">Data de Nascimento</label>
+                    <input type="date" name="data" id="data" required>
+                </div>
+                <div class="campo">
+                    <label for="">Curso</label>
+                    <select class="select-box" name="curso" id="curso" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="">Administração</option>
+                        <option value="">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="">Arquitetura e Urbanismo</option>
+                        <option value="">Biomedicina</option>
+                        <option value="">Ciências Biológicas</option>
+                        <option value="">Ciências Contábeis</option>
+                        <option value="">Direito</option>
+                        <option value="">Educação Física</option>
+                        <option value="">Enfermagem</option>
+                        <option value="">Engenharia Civil</option>
+                        <option value="">Engenharia de Software</option>
+                        <option value="">Engenharia Mecânica</option>
+                        <option value="">Engenharia Química</option>
+                        <option value="">Filosofia</option>
+                        <option value="">Fisioterapia</option>
+                        <option value="">Gastronomia</option>
+                        <option value="">História</option>
+                        <option value="">Jornalismo</option>
+                        <option value="">Letras - Inglês</option>
+                        <option value="">Letras - Português</option>
+                        <option value="">Matemática</option> 
+                        <option value="">Música - Piano</option>
+                        <option value="">Música - Violão</option>
+                        <option value="">Nutrição</option>
+                        <option value="">Pedagogia</option>
+                        <option value="">Psicologia</option>
+                        <option value="">Publicidade e Propaganda</option>
+                        <option value="">Relações Públicas</option>
+                        <option value="">Serviço Social</option>
+                        <option value="">Teologia</option>
+                    </select>
+                </div>
+                <div id="botoes">
+                    <button id="enviar" onclick="validar()"><a href="confirmed.html">INSCREVA-SE</a></button>
+                    <button id="cancelar"><a class="cancela" href="index.html">CANCELAR</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>

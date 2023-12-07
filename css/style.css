@@ -1,0 +1,1118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*CSS PAGINA INICIAL*/
+:root {
+    --font-size-base: 16px;
+}
+
+header {
+    background-color: #710603;
+    height: 16rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #EFCD97;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+header p {
+    color: #FFF;
+    font-family: Bebas Neue;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav {
+    width: 14.313rem;
+    height: 3.813rem;
+    margin-left: auto;
+}
+
+nav ul {
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Bebas Neue;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn-menu::before {
+    content: "";
+    width: 100%;
+    height: 0;
+
+    position: absolute;
+    background: #710703d7;
+    z-index: -1;
+    transition: height 0.3s;
+}
+
+
+.btn-menu:hover::before {
+    height: 100%;
+
+}
+
+
+#pessoas {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 8.4375rem;
+}
+
+#pessoas img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+#explicacao {
+    text-align: center;
+    margin-top: 2.875rem;
+}
+
+h2 {
+    color: #710603;
+    font-family: Adamina;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2.5625rem;
+}
+
+#explicacao p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: justify;
+    text-indent: 2.5rem;
+    margin: auto;
+    width: 51.875rem;
+}
+
+hr {
+    margin-top: 3.6875rem;
+    margin-bottom: 7.25rem;
+    border: 3px solid #710603;
+}
+
+#informacoes {
+    width: 39.0625rem;
+    height: 22rem;
+}
+
+#informacoes p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 1.6875rem;
+}
+
+#informacoes h2 {
+    text-align: center;
+}
+
+.botao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 17.125rem;
+    height: 21.25rem;
+}
+
+.botao button {
+    border: 3px solid black;
+    border-radius: 3.125rem;
+    background: rgba(113, 6, 3, 0.00);
+    width: 13.875rem;
+    height: 4.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.botao button:hover {
+    background-color: #DE8F44;
+    transition: 1s;
+}
+
+.botao a:hover {
+    color: #FFF;
+}
+
+.botao button a {
+    text-decoration: none;
+    color: #480907;
+    font-family: Poly;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pt2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8.0625rem;
+}
+
+footer {
+    background-color: #710603;
+    height: 16.5625rem;
+    padding-top: 1.6875rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#fale {
+    text-align: center;
+    width: 41.875rem;
+}
+
+footer h3 {
+    color: #FFF;
+    font-family: Adamina;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.441rem;
+    text-align: center;
+}
+
+footer p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.1875rem;
+}
+
+#patrocinadores {
+    width: 41.875rem;
+}
+
+#patrocinadores ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#copyright {
+    height: 1.125rem;
+    margin-top: 1.875rem;
+}
+
+#copyright p {
+    font-size: 0.9375rem;
+    font-style: normal;
+    margin: 0;
+}
+
+/* CSS MODAL */
+
+.janela-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+.modal {
+    width: 36.25rem;
+    height: 49.375rem;
+    min-width: 28.125rem;
+    min-height: 12.5rem;
+    background: #DE8F44;
+    backdrop-filter: blur(0.625rem);
+    display: flex;
+    align-items: center;
+    border-radius: 1.875rem;
+}
+
+.modal h2 {
+    margin-bottom: 4.938rem;
+    text-align: center;
+    color: #480907;
+    font-family: Average;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form {
+    width: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.125rem auto 0 auto;
+}
+
+.campo {
+    display: flex;
+    height: 1.875rem;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3.375rem;
+}
+
+.campo input::placeholder {
+    color: black;
+    font-family: Mate;
+    font-size: 1.25rem;
+}
+
+.campo label {
+    margin-bottom: 0.6875rem;
+    color: #480907;
+    font-family: Mate;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+
+#nome,
+#email,
+#endereco,
+#cpf,
+#data,
+#curso {
+    width: 100%;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 1.25rem;
+    height: 1.75rem;
+    outline: unset;
+}
+
+input[type="date"], .select-box{
+    color: black;
+    font-family: Mate;
+    font-size: 1.25rem;
+  
+}
+
+input, select{
+    padding-left: 0.625rem;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.125rem;
+
+}
+
+#enviar,
+#cancelar {
+    height: 3.375rem;
+    width: 14.5rem;
+    border-radius: 3.125rem;
+    background: #D9D9D9;
+    border: none;
+    cursor: pointer;
+}
+
+#enviar a,
+#cancelar a {
+    color: #480907;
+    font-family: Mate;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#enviar:hover {
+    background-color: #EFCD97;
+}
+
+#cancelar:hover {
+    background-color: #EFCD97;
+}
+
+@keyframes abrirmodal {
+    from {
+        opacity: 0.7;
+        transform: translate3d(0, -5rem, -0.3125rem);
+        top: -600px;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 1s;
+}
+
+/*CSS PAGINA DE CONFIRMAÇÃO*/
+
+.confirmacao {
+    display: flex;
+    justify-content: center;
+    margin: 10.0625rem auto 10.0625rem auto;
+}
+
+#texto-confirmacao {
+    display: flex;
+    width: 68.0625rem;
+    border-radius: 1.25rem;
+    background: rgba(239, 205, 151, 0.72);
+    justify-content: center;
+    color: #710603;
+    font-family: Luckiest Guy;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#steve_confirmacao {
+    display: flex;
+    justify-content: center;
+}
+
+#agrad {
+    display: flex;
+    justify-content: center;
+}
+
+#agrad p {
+    color: #000;
+    text-align: center;
+    font-family: Adamina;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 64.625rem;
+    height: 9.1875rem;
+    margin: 7.25rem auto 8.75rem auto;
+}
+
+/*CSS PÁGINA STANDS*/
+
+
+.t-s {
+    display: flex;
+    justify-content: center;
+    margin: 9.875rem auto 6.688rem auto;
+}
+
+
+#titulo-stands {
+    display: flex;
+    width: 27.688rem;
+    border-radius: 1.25rem;
+    background: rgba(239, 205, 151, 0.72);
+    justify-content: center;
+    color: #710603;
+    font-family: Luckiest Guy;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#stands {
+    width: 85.375rem;
+    height: 52.688rem;
+    margin-bottom: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stands ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#stands ul li {
+    list-style: none;
+}
+
+.stand p {
+    color: #000;
+    font-family: Poly;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.stand #stand-4,
+#stand-5,
+#stand-6 {
+    margin-top: 6.688rem;
+}
+
+.stand a {
+    text-decoration: none;
+}
+
+.stand img {
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*CSS PÁGINA CHEFS*/
+
+.t-c {
+    display: flex;
+    justify-content: center;
+    margin: 9.875rem auto 6.688rem auto;
+}
+
+#titulo-chefs {
+    display: flex;
+    width: 27.688rem;
+    border-radius: 1.25rem;
+    background: rgba(239, 205, 151, 0.72);
+    justify-content: center;
+    color: #710603;
+    font-family: Luckiest Guy;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#chefs {
+    width: 85.375rem;
+    height: 52.688rem;
+    margin-bottom: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chefs ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#chefs ul li {
+    list-style: none;
+}
+
+.chef p {
+    color: #000;
+    font-family: Poly;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.chef #chef-4,
+#chef-5,
+#chef-6 {
+    margin-top: 6.688rem;
+}
+
+.chef a {
+    text-decoration: none;
+}
+
+.chef img {
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*CSS RESPONSIVO */
+
+/* Media Queries para tablets */
+@media screen and (max-width: 744px) {
+    /* PAGINA INICIAL */
+
+    header {
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 4.133rem;
+
+    }
+
+    header p {
+        font-size: 1.163rem;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+
+    #pessoas {
+        margin-top: 5.671rem;
+        height: 8.478rem;
+
+    }
+
+    #pessoas img {
+        width: 12.624rem;
+        height: 8.416rem;
+    }
+
+    h2 {
+        font-size: 1.421rem;
+
+    }
+
+    #explicacao p {
+        font-size: 1.137rem;
+        width: 29.442rem;
+    }
+
+    #informacoes {
+        width: 18.316rem;
+        height: 10.316rem;
+    }
+
+    #informacoes p {
+        font-size: 1.172rem;
+
+    }
+
+    hr {
+        margin-bottom: 3.75rem;
+    }
+
+    .pt2 {
+        align-items: center;
+        height: 10.316rem;
+    }
+
+    .botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+
+    .botao img {
+        width: 9.368rem;
+        height: 9.266rem;
+    }
+
+    .botao button {
+        width: 9.875rem;
+        height: 2.938rem;
+        font-size: 1.5rem;
+    }
+
+    .botao button a {
+        width: 9.875rem;
+        height: 2.938rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: 8.57rem;
+    }
+
+    footer p {
+        font-size: 0.775rem;
+        margin-bottom: 0.785rem;
+    }
+
+    #fale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fale h3,
+    #patrocinadores h3 {
+        font-size: 1.25rem;
+    }
+
+    #fale {
+        width: 15.629rem;
+
+    }
+
+    #patrocinadores {
+        display: flex;
+        flex-direction: column;
+        width: 25.875rem;
+    }
+
+
+    #patrocinadores ul li img {
+        margin-left: auto;
+    }
+
+    #patrocinadores img {
+        width: 3.229rem;
+        height: 3.229rem;
+        flex-shrink: 0;
+    }
+
+    #copyright p {
+        font-size: 0.484rem;
+    }
+
+    /*PAGINA CONFIRMAÇÃO*/
+
+    #texto-confirmacao {
+        font-size: 2.871rem;
+        text-align: center;
+        width: 32.563rem;
+
+    }
+
+    #steve_confirmacao img {
+        height: 25.098rem;
+        width: 22.371rem;
+    }
+
+    #agrad p {
+        font-size: 1.599rem;
+    }
+
+    /*MODAL*/
+
+    .modal {
+        width: 31.25rem;
+        height: 49.313rem;
+    }
+
+    .form h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2.884rem;
+    }
+
+    .campo {
+        width: 26.688rem;
+        height: 3.938rem;
+        margin: 0 auto 0.938rem auto;
+    }
+
+    #enviar,
+    #cancelar {
+        width: 10.625rem;
+        height: 3.125rem;
+        margin-top: 7.438rem;
+
+    }
+
+    #botoes {
+        margin-top: 0rem;
+    }
+
+    #botoes a {
+        font-size: 1.25rem;
+    }
+
+    /*PAGINA STAND*/
+
+    #titulo-stands {
+        width: 14.305rem;
+        font-size: 3.1rem;
+    }
+
+    #stands {
+        width: 44.11rem;
+        height: 27.234rem;
+    }
+
+    .stand p {
+        font-size: 1.292rem;
+    }
+
+    .stand img {
+        width: 12.917rem;
+        height: 9.688rem;
+    }
+
+    /*PAGINA CHEFS*/
+
+    #titulo-chefs {
+        width: 14.305rem;
+        font-size: 3.1rem;
+    }
+
+    #chefs {
+        width: 44.11rem;
+        height: 27.234rem;
+    }
+
+    .chef p {
+        font-size: 1.292rem;
+    }
+
+    .chef img {
+        width: 12.917rem;
+        height: 9.688rem;
+    }
+
+}
+
+/* Media Queries para telas de celulares */
+@media screen and (max-width: 414px) {
+
+    /* PAGINA INICIAL */
+
+    header {
+        height: 8rem;
+
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        height: 2.5rem;
+    }
+
+    header p {
+        font-size: 0.938rem;
+        margin-top: 0.75rem;
+    }
+
+    nav {
+        width: 9rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    #pessoas {
+        margin-top: 2.625rem;
+        height: 32.25rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pessoas img {
+        width: 16.875rem;
+        height: 9.375rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+
+    }
+
+    #explicacao p {
+        font-size: 1rem;
+        width: 20.5rem;
+    }
+
+    .pt2 {
+        height: 27.016rem;
+        margin-bottom: 3.984rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #informacoes {
+        width: 19.938rem;
+        height: 9.375rem;
+        text-align: center;
+    }
+
+    #informaçoes h2 {
+        margin-bottom: 1.938rem;
+        margin-top: 3.188rem;
+    }
+
+    #informacoes p {
+        font-size: 0.938rem;
+        margin-bottom: 0.813rem;
+
+    }
+
+
+    .botao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+
+    .botao img {
+        width: 9.368rem;
+        height: 9.266rem;
+    }
+
+    .botao button {
+        width: 9.875rem;
+        height: 2.938rem;
+    }
+
+    .botao button a {
+        width: 9.875rem;
+        height: 2.938rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        width: auto;
+        height: 27.938rem;
+        padding-top: 2.063rem;
+    }
+
+    footer p {
+        font-size: 0.938rem;
+        margin-bottom: 2rem;
+    }
+
+    #fale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 9.75rem;
+    }
+
+    #fale h3 {
+        margin-bottom: 2rem;
+    }
+
+    #fale h3,
+    #patrocinadores h3 {
+        font-size: 1.25rem;
+    }
+
+    #patrocinadores {
+        display: flex;
+        flex-direction: column;
+        width: 25.875rem;
+        height: 7.313rem;
+        margin-top: 3.313rem;
+    }
+
+
+    #patrocinadores ul li img {
+        margin-left: auto;
+    }
+
+    #patrocinadores img {
+        width: 3.125rem;
+        height: 3.125rem;
+        flex-shrink: 0;
+    }
+
+    #copyright p {
+        font-size: 0.625rem;
+    }
+
+    /*PAGINA CONFIRMAÇÃO*/
+
+    #texto-confirmacao {
+        font-size: 3.125rem;
+        text-align: center;
+    }
+
+    #steve_confirmacao img {
+        height: 24.201rem;
+        width: 21.5rem;
+    }
+
+    #agrad p {
+        width: 20.375rem;
+        height: 9.597rem;
+        font-size: 1.875rem;
+    }
+
+    /*MODAL*/
+
+    .modal {
+        width: 16.9rem;
+        height: 26rem;
+        min-width: 0;
+        min-height: 0;
+    }
+
+    .form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .campo {
+        width: 15rem;
+        height: 1.762rem;
+        margin: 0.625rem auto 0.5rem auto;
+    }
+
+    #nome,
+    #email,
+    #endereco,
+    #cpf,
+    #data,
+    #curso {
+        height: 1.2rem;
+    }
+
+    .campo input::placeholder {
+        font-size: 0.875rem;
+    }
+
+    .campo label {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    input[type="date"], .select-box{
+        font-size: 0.875rem;
+    }
+
+
+    #enviar,
+    #cancelar {
+        width: 4.754rem;
+        height: 1.398rem;
+        margin-top: 3rem;
+
+    }
+
+    #botoes a {
+        font-size: 0.6rem;
+    }
+
+    /*PAGINA STAND*/
+
+    .t-s {
+        margin: 1.938rem auto 0 auto;
+    }
+
+    #titulo-stands {
+        width: 6.813rem;
+        font-size: 1.476rem;
+        margin-bottom: 0;
+    }
+
+    #stands {
+        width: 20.938rem;
+        height: 85.25rem;
+    }
+
+    .stand p {
+        font-size: 1.20rem;
+    }
+
+    .stand img {
+        width: 11.313rem;
+        height: 8.515rem;
+    }
+
+    #stand a {
+        width: 11.313rem;
+        height: 8.765rem
+    }
+
+    .stand #stand-4,
+    #stand-5,
+    #stand-6 {
+        margin-top: 3.813rem;
+    }
+
+    .stand li {
+        margin-top: 3.813rem;
+    }
+
+    /*PAGINA CHEFS*/
+
+    .t-c {
+        margin: 1.938rem auto 0 auto;
+    }
+
+    #titulo-chefs {
+        width: 6.813rem;
+        font-size: 1.476rem;
+        margin-bottom: 0;
+    }
+
+    #chefs {
+        width: 20.938rem;
+        height: 85.25rem;
+    }
+
+    .chef p {
+        font-size: 1.20rem;
+    }
+
+    .chef img {
+        width: 11.313rem;
+        height: 8.515rem;
+    }
+
+    #chef a {
+        width: 11.313rem;
+        height: 8.765rem
+    }
+
+    .chef #chef-4,
+    #chef-5,
+    #chef-6 {
+        margin-top: 3.813rem;
+    }
+
+    .chef li {
+        margin-top: 3.813rem;
+    }
+
+
+
+
+}

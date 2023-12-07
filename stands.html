@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaberfest 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icone/Pizza-icon_30282.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Average&family=Bebas+Neue&family=Luckiest+Guy&family=Mate&family=Montserrat:wght@300&family=Poly&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>PIZZABERFEST 2023</h1>
+            <p>O maior evento de pizza de Salvador!</p>
+        </header>
+        <nav class="nav">
+            <ul id="menu">
+                <li class="btn-menu"><a href="index.html">HOME</a></li>
+                <li class="btn-menu"><a href="stands.html">STANDS</a></li>
+                <li class="btn-menu"><a href="chefs.html">CHEFS</a></li>
+            </ul>
+        </nav>
+        <section class="t-s">
+            <h2  id="titulo-stands">STANDS</h2>
+        </section>
+       <section id="stands">
+        <ul>
+            <section class="stand">
+                <a href="https://www.instagram.com/lavera_pizzariadelivery/">
+                    <li id="stand-1"><img src="images/stands/stand-1.png" alt="Stand 1 - LA VERA PIZZA"></li>
+                    <p>LA VERA PIZZA</p>
+                </a>
+            </section>
+            <section class="stand">
+                <a href="https://www.instagram.com/lapizzeriadelsur/">
+                    <li id="stand-2"><img src="images/stands/stand-2.png" alt="Stand 2 - LA PIZZERIA DEL SUR"></li>
+                    <p>LA PIZZERIA DEL SUR</p>
+                </a>
+            </section>
+            <section class="stand">
+                <a href="https://aiqfome.com/MG/pouso-alegre/monster-pizza">
+                    <li id="stand-3"><img src="images/stands/stand-3.png" alt="Stand 3 - MONSTER PIZZA"></li>
+                    <p>MONSTER PIZZA</p>
+                </a>
+            </section>
+            <section class="stand">
+                <a href="https://www.mrpizzasa.com.br">
+                    <li id="stand-4"><img src="images/stands/stand-4.png" alt="Stand 4 - MISTER PIZZA"></li>
+                    <p>MISTER PIZZA</p>
+                </a>
+            </section>
+            <section class="stand">
+                <a href="https://www.papapizzasalvador.com.br">
+                    <li id="stand-5"><img src="images/stands/stand-5.png" alt="Stand 5 - PAPA'S PIZZA"></li>
+                    <p>PAPA'S PIZZA</p>
+                </a>
+            </section>
+            <section class="stand">
+                <a href="https://pizzahut.com.br">
+                    <li id="stand-6"><img src="images/stands/stand-6.png" alt="Stand 6 - PIZZA SHOP"></li>
+                    <p>PIZZA SHOP</p>
+                </a>
+            </section>
+        </ul>
+       </section>
+        <footer>
+            <section id="fale">
+                <h3>FALE CONOSCO</h3>
+                <p>Telefone: (71) 4002-8922</p>
+                <p>Email: pizzaberfest@ucsal.eventos.br</p>
+            </section>
+            <section id="patrocinadores">
+                <h3>PATROCINADORES</h3>
+                <ul>
+                    <li><a href="https://pizzahut.com.br"><img src="images/patrocinadores/pizza-hut.png" alt="Pizza Hut"></a></li>
+                    <li><a href="https://www.dominos.com.br"><img src="images/patrocinadores/dominos.png" alt="Domino's"></a></li>
+                    <li><a href="https://ranchodocupim.com.br/salvador/"><img src="images/patrocinadores/rancho-cupim.png" alt="Rancho do Cupim"></a></li>
+                </ul>
+            </section>
+            <section id="copyright">
+                <p>Copyright © 2023. Análise e Desenvolvimento de Sistemas - Noturno - 2023.2</p>
+            </section>
+        </footer>
+    </main>
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <form class="form" action="">
+                <h2>INSCRIÇÃO</h2>
+                <div class="campo">
+                    <label for="">Nome</label>
+                    <input type="text" placeholder=" Digite seu nome" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="">Email</label>
+                    <input type="email" placeholder=" Digite seu email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="">Endereço</label>
+                    <input type="text" placeholder=" Digite seu endereço" name="endereco" id="endereco">
+                </div>
+                <div class="campo">
+                    <label for="">CPF</label>
+                    <input type="text" placeholder=" Digite seu CPF" name="cpf" id="cpf">
+                </div>
+                <div class="campo">
+                    <label for="">Data de Nascimento</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="campo">
+                    <label for="">Curso</label>
+                    <select name="" id="curso">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="">Direito</option>
+                        <option value="">Arquitetura e Urbanismo</option>
+                    </select>
+                </div>
+                <div id="botoes">
+                    <button id="enviar"><a href="confirmed.html">INSCREVA-SE</a></button>
+                    <button id="cancelar"><a class="cancela" href="index.html">CANCELAR</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
